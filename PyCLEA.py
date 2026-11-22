@@ -77,8 +77,8 @@ import mplcursors
 import os
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data"
-ASSETS_DIR = BASE_DIR / "assets"
+DATA_DIR = BASE_DIR / "data" if (BASE_DIR / "data").is_dir() else BASE_DIR
+ASSETS_DIR = BASE_DIR / "assets" if (BASE_DIR / "assets").is_dir() else BASE_DIR
 
 
 ###########################################################
@@ -179,7 +179,7 @@ CATALOG_FILE = DATA_DIR / "clean_master_galaxy_catalog.csv"
 if not CATALOG_FILE.exists():
     CATALOG_FILE = DATA_DIR / "sample_galaxy_catalog.csv"
 if not CATALOG_FILE.exists():
-    raise FileNotFoundError("Place sample_galaxy_catalog.csv in the data/ folder.")
+    raise FileNotFoundError("Place sample_galaxy_catalog.csv in the project folder or data/ folder.")
 REAL_CATALOG = pd.read_csv(CATALOG_FILE, dtype={"Galaxy_ID": str})
 required = ["Galaxy_ID", "RA_deg", "Dec_deg", "Redshift"]
 if any(col not in REAL_CATALOG for col in required):
