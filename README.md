@@ -21,7 +21,7 @@ PyCLEA combines an astronomical catalog with simulated telescope imaging, spectr
 
 ## Research poster and project visuals
 
-**[View the X-SIG research poster (PDF)](docs/XSIG_Research_Poster.pdf)** — *PyCLEA: Modernizing the Large Scale Structure of the Universe Lab*, **R. Johnson and Sara Tamura**, Gettysburg College.
+*PyCLEA: Modernizing the Large Scale Structure of the Universe Lab*, **R. Johnson and Sara Tamura**, Gettysburg College.
 
 The poster presents the project's educational motivation, methods, and representative visualizations, including the **Galaxy Finder interface**, **simulated spectral acquisition**, **all-sky galaxy catalog**, **three-dimensional galaxy redshift map**, and **survey sky coverage**. The plotted survey catalog positions in the poster are distinct from the smaller demonstration dataset bundled with this repository.
 
