@@ -130,4 +130,3 @@ This project was developed during the **2026 Gettysburg College X-SIG summer res
 
 **Sara Tamura**  
 B.S. Physics candidate, Data Science minor — Gettysburg College, expected May 2027  
-Interests: computational astrophysics, scientific software, data analysis, and aerospace technology.
