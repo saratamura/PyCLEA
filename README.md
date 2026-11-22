@@ -25,6 +25,8 @@ PyCLEA combines an astronomical catalog with simulated telescope imaging, spectr
 
 The poster presents the project's educational motivation, methods, and representative visualizations, including the **Galaxy Finder interface**, **simulated spectral acquisition**, **all-sky galaxy catalog**, **three-dimensional galaxy redshift map**, and **survey sky coverage**. The plotted survey catalog positions in the poster are distinct from the smaller demonstration dataset bundled with this repository.
 
+**[View the X-SIG research poster (PDF)](XSIG_Research_Poster.pdf)**
+
 The poster serves as the project's visual overview. Separate screenshots of the application may be added later, but are not necessary to browse the project.
 
 ## Scientific background
@@ -86,29 +88,25 @@ The program creates `galaxy_database.xlsx` automatically as observations are sav
 
 ```text
 PyCLEA/
-├── PyCLEA.py                    # Main desktop application
-├── README.md                    # Project overview and setup
-├── requirements.txt             # Python dependencies
-├── .gitignore                   # Excludes generated/local files
-├── data/
-│   └── sample_galaxy_catalog.csv
-├── assets/
-│   └── telescope.wav
-├── docs/
-│   └── XSIG_Research_Poster.pdf # Research poster and visual overview
-├── screenshots/                 # Optional future application screenshots
-└── PORTFOLIO_CHECKLIST.md       # Pre-publication checks
+├── PyCLEA.py                   # Main desktop application
+├── README.md                   # Project overview and setup
+├── requirements.txt            # Python dependencies
+├── sample_galaxy_catalog.csv   # 30,000-galaxy demo dataset
+├── telescope.wav               # Telescope sound
+├── dome.wav                    # Observatory dome sound
+├── XSIG_Research_Poster.pdf    # Research poster
+└── PORTFOLIO_CHECKLIST.md      # Project checklist
 ```
 
 ### Data and reproducibility
 
-The included `data/sample_galaxy_catalog.csv` is a fixed-seed random selection of **30,000 rows** from the larger research catalog. It supports demonstration of the software but does **not** preserve the completeness or selection function of the original survey compilation. It should not be used to draw conclusions about the morphology of the cosmic web.
+The included `sample_galaxy_catalog.csv` is a fixed-seed random selection of **30,000 rows** from the larger research catalog. It supports demonstration of the software but does **not** preserve the completeness or selection function of the original survey compilation. It should not be used to draw conclusions about the morphology of the cosmic web.
 
 Required fields are `Galaxy_ID`, `RA_deg`, `Dec_deg`, and `Redshift`. The optional `Survey` column identifies the source when available.
 
-To use a larger catalog, place an appropriately formatted file at `data/clean_master_galaxy_catalog.csv`. The application will load that file in preference to the sample. This full-catalog filename is excluded by `.gitignore` to avoid accidental upload.
+To use a larger catalog, place an appropriately formatted file at `clean_master_galaxy_catalog.csv`. The application will load that file in preference to the sample. Keep the full catalog out of GitHub unless you have verified its size and redistribution permissions.
 
-An optional `data/known_large_scale_structures.csv` provides named observing targets. The application can run without it.
+An optional `known_large_scale_structures.csv` provides named observing targets. The application can run without it.
 
 **Data provenance and redistribution:** Before publishing the sample data publicly, document the original survey sources and verify that redistribution is permitted. The catalog is survey-derived; it is not presented as a new survey produced by this project.
 
@@ -124,7 +122,7 @@ An optional `data/known_large_scale_structures.csv` provides named observing tar
 
 This project was developed during the **2026 Gettysburg College X-SIG summer research program** and builds on the instructional concepts of the **Project CLEA Large Scale Structure of the Universe** laboratory.
 
-**Poster coauthor:** R. Johnson. **Before public release:** Confirm the preferred full name and acknowledgment of the research advisor and collaborators, obtain approval to share the coauthored poster, verify exact galaxy survey citations and usage terms, and confirm attribution or permission details for the telescope sound effect. A software license has not yet been selected pending confirmation of ownership and publication permissions.
+**Poster coauthor:** R. Johnson. **Publication follow-up:** Confirm the preferred full name and acknowledgment of the research advisor and collaborators, obtain approval to share the coauthored poster, verify exact galaxy survey citations and usage terms, and confirm attribution or permission details for the telescope sound effect. A software license has not yet been selected pending confirmation of ownership and publication permissions.
 
 ## Author
 
